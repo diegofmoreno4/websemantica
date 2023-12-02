@@ -22,8 +22,8 @@ function searchBooks() {
           const author = book.volumeInfo.authors
             ? book.volumeInfo.authors.join(", ")
             : "Autor Desconocido";
-          const description =
-            book.volumeInfo.description || "Sin descripción disponible";
+          const publisher =
+            book.volumeInfo.publisher || "Sin descripción disponible";
           const averageRating =
             book.volumeInfo.averageRating || "No disponible";
           const thumbnail = book.volumeInfo.imageLinks
@@ -31,11 +31,13 @@ function searchBooks() {
             : "No disponible";
 
           bookElement.innerHTML = `
+                     <div class="centered-content">
                         <h2>${title}</h2>
                         <img src="${thumbnail}" alt="${title} Cover" />
                         <p>Autor: ${author}</p>
-                        <p>${description}</p>
+                        <p>Publisher: ${publisher}</p>
                         <p>Calificación: ${averageRating}</p>
+                      </div>
                     `;
 
           resultsSection.appendChild(bookElement);
