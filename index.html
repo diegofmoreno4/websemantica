@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Búsqueda de Libros</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>Búsqueda de Libros</h1>
+    </header>
+
+    <main>
+      <section id="search">
+        <label for="searchInput">Buscar Libro:</label>
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Ingrese el título del libro"
+        />
+        <button onclick="searchBooks()">Buscar</button>
+      </section>
+
+      <section id="results">
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
