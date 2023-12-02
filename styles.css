@@ -1,6 +1,6 @@
 body {
   font-family: "Arial", sans-serif;
-  margin: 20px;
+  margin: 0px;
   background-color: #f8f8f8;
 }
 
@@ -25,6 +25,7 @@ main {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   gap: 20px;
+  padding: 30px;
 }
 
 #searchInput {
@@ -58,7 +59,7 @@ button:hover {
 }
 
 .book:hover {
-  transform: scale(1.08);
+  transform: scale(1.06);
 }
 
 h2 {
